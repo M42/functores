@@ -14,11 +14,26 @@ Functores y mónadas en Haskell y en teoría de categorías.
   3. Currificación.
   3. Funciones de orden superior.
 4. Funtores.
+  5. Definición de funtor: `fmap`
+  5. Leyes de los funtores.
+  5. Definición de funtor aplicativo: `pure`, `<*>`, `<$>`.
+  6. Leyes de los funtores aplicativos.
+7. Ejemplos de funtores.
+  8. `Maybe`
+  9. `ZipList` **(?)**
+  10. `((->) r)`
 5. Mónadas.
-  6. Definición de mónada.
-  7. Mónadas de una sóla dirección.
+  6. Definición de mónada: `>>=` y `return`.
+  7. Leyes de las mónadas.
+  8. Notación `do`.
+  9. `Control.Monad`
+  7. Mónadas de una sóla dirección. **(?)**
+  8. Transformadores de mónadas. **(?)**
 6. Ejemplos de Mónadas
-  7. List.
-  8. Maybe.
-  9. Writer (?)
-  10. State y IO (?)
+  7. `Identity` **(?)**
+  7. `List`.
+  8. `Maybe`.
+  9. `Writer` **(?)**
+  10. `State` y `IO` **(?)**
+  
+**(?)**: No sé si es suficientemente relevante.
