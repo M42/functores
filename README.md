@@ -30,10 +30,10 @@ Functores y mónadas en Haskell y en teoría de categorías.
   7. Mónadas de una sóla dirección. **(?)**
   8. Transformadores de mónadas. **(?)**
 6. Ejemplos de Mónadas
-  7. `Identity` **(?)**
+  7. `Identity`. **(?)**
   7. `List`.
   8. `Maybe`.
   9. `Writer` **(?)**
-  10. `State` y `IO` **(?)**
+  10. `State` y `IO`. **(?)**
   
 **(?)**: No sé si es suficientemente relevante.
