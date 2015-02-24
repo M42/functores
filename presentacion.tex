@@ -1,0 +1,58 @@
+%% Paquetes y formato %%
+\documentclass{beamer} % Beamer
+\usepackage[spanish]{babel} % Traducciones
+\usepackage[utf8]{inputenc} % Uso de caracteres UTF-8
+\usepackage{amsfonts} %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}  % Paquetes de matemáticas  %
+\usepackage{amssymb}  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%% Comandos %%
+\newcommand{\iffd}{\overset{\Delta}{\iff}} % Si y sólo si por definición
+\newcommand{\N}{\mathbb{N}}                % Números naturales
+\newcommand{\R}{\mathbb{R}}}}              % Números reales
+\newcommand{\C}{\mathbb{C}}}}              % Números complejos
+\newcommand{\Power}{\mathcal{P}}           % Conjunto potencia
+\newcommand{\st}{\mathrel{} : \mathrel{}}  % Tal que (dos puntos)
+
+
+%% Título y otros %%
+\title{Introducción a Haskell}  % Título
+\author[Pablo \& Mario] % Autores (de tex.stackexchange.com/questions/63259)
+{\texorpdfstring{
+    \begin{columns}
+      \column{.45\linewidth}
+      \centering
+      Pablo Baeyens\\
+      \href{http://www.github.com/pbaeyens}{@pbaeyens}
+      \column{.45\linewidth}
+      \centering
+      Mario Román\\
+      \href{http://www.github.com/M42}{@M42}
+    \end{columns}
+}{Pablo Baeyens \and Mario Román}}
+
+\date{OSL 2015} % Fecha
+
+
+%% Presentación %%
+\begin{document}
+
+  % Página de título
+  \frame{\titlepage}
+
+  % Índice
+  \frame{
+    \frametitle{Índice}
+    \tableofcontents[currentsection]
+  }
+
+  % Secciones
+  \section{Bases de Haskell}
+  \section{El sistema de tipos}
+  \section{Definición de funciones}
+  \section{Funtores}
+  \section{Ejemplos de funtores}
+  \section{Mónadas}
+  \section{Ejemplos de mónadas}
+\end{document}
