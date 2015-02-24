@@ -16,9 +16,20 @@
 \newcommand{\st}{\mathrel{} : \mathrel{}}  % Tal que (dos puntos)
 
 
+%% Temas %%
+% Tema y tema de color
+\usetheme{Dresden}
+\usecolortheme{beaver}
+
+% Color de los enlaces (tex.stackexchange.com/questions/13423)
+\definecolor{links}{HTML}{DF0101}
+\hypersetup{colorlinks,linkcolor=,urlcolor=links}
+
+
 %% Título y otros %%
 \title{Introducción a Haskell}  % Título
-\author[Pablo \& Mario] % Autores (de tex.stackexchange.com/questions/63259)
+\subtitle{Funtores y mónadas}   % Subtítulo
+\author[@pbaeyens \and @M42]    % Autores (tex.stackexchange.com/questions/63259)
 {\texorpdfstring{
     \begin{columns}
       \column{.45\linewidth}
@@ -31,7 +42,6 @@
       \href{http://www.github.com/M42}{@M42}
     \end{columns}
 }{Pablo Baeyens \and Mario Román}}
-
 \date{OSL 2015} % Fecha
 
 
@@ -42,9 +52,19 @@
   \frame{\titlepage}
 
   % Índice
+  %\frame{
+  %  \frametitle{Índice}
+  %  \tableofcontents[currentsection]
+  %}
+
+  % Código fuente
   \frame{
-    \frametitle{Índice}
-    \tableofcontents[currentsection]
+    \frametitle{¡Contribuye!}
+    El código fuente de estas diapositivas está disponible en:
+    \begin{center}
+      \huge \href{http://github.com/M42/functores}{github.com/M42/functores}
+    \end{center}
+    Erratas, correcciones y aportaciones son bienvenidas.
   }
 
   % Secciones
