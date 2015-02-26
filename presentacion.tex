@@ -5,13 +5,13 @@
 \usepackage{amsfonts} %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{amsmath}  % Paquetes de matemáticas  %
 \usepackage{amssymb}  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\usepackage{listings} % Coloreado del código
 
 %% Comandos %%
 \newcommand{\iffd}{\overset{\Delta}{\iff}} % Si y sólo si por definición
 \newcommand{\N}{\mathbb{N}}                % Números naturales
-\newcommand{\R}{\mathbb{R}}}}              % Números reales
-\newcommand{\C}{\mathbb{C}}}}              % Números complejos
+\newcommand{\R}{\mathbb{R}}                % Números reales
+\newcommand{\C}{\mathbb{C}}                % Números complejos
 \newcommand{\Power}{\mathcal{P}}           % Conjunto potencia
 \newcommand{\st}{\mathrel{} : \mathrel{}}  % Tal que (dos puntos)
 
@@ -71,7 +71,20 @@
   \section{Bases de Haskell}
   \section{El sistema de tipos}
   \section{Definición de funciones}
+  
   \section{Funtores}
+     \begin{frame}[fragile]
+       \frametitle{Definición}
+       Un funtor es un constructor de tipos sobre el que pueden mapearse funciones. 
+       Los functores forman una clase con el método:
+       \begin{lstlisting}[language=Haskell]
+         fmap :: (a -> b) -> f a -> f b
+       \end{lstlisting}
+       Dada una función, devuelve su versión aplicable sobre el functor.
+% Indentar \end{frame} produce un error (!): 
+% http://tex.stackexchange.com/questions/225581/beamer-file-ended-while-scanning-use-of-next
+\end{frame}
+   
   \section{Ejemplos de funtores}
   \section{Mónadas}
   \section{Ejemplos de mónadas}
