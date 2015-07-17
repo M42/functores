@@ -1,5 +1,5 @@
 # functores
-Functores y mónadas en Haskell y en teoría de categorías.
+Functores y mónadas en Haskell.
 
 ## Índice de contenidos
 
